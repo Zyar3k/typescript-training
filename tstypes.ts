@@ -95,4 +95,5 @@ testAny = [1,2,3];
 testAny = {
     name: "John",
     age: 22,
-    isAdmin: false}
+    isAdmin: false
+}
