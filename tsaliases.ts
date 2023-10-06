@@ -1,34 +1,34 @@
-let func = (user:{name:string, age:number, phone?:string})=>{
-    console.log(user.name)
-}
+let func = (user: { name: string; age: number; phone?: string }) => {
+  console.log(user.name);
+};
 
 // TYPE ALIASES
 
 type UserType = {
-    name: string,
-    age: number,
-    phone?: string
-}
+  name: string;
+  age: number;
+  phone?: string;
+};
 
-let betterFunc= (user: UserType) => {
-    console.log(user.name)
-}
+let betterFunc = (user: UserType) => {
+  console.log(user.name);
+};
 
-type myFunc = (a:number, b:string) => void
+type myFunc = (a: number, b: string) => void;
 
 let write: myFunc = (num, str) => {
-    console.log(`${num} times ${str}`)
-}
+  console.log(`${num} times ${str}`);
+};
 
 type UserType2 = {
-    name: string,
-    age: number,
-    phone?: string,
-    theme: "dark" | "light"
-}
+  name: string;
+  age: number;
+  phone?: string;
+  theme: "dark" | "light";
+};
 
 const userWithTheme: UserType2 = {
-    name: "John",
-    age: 30,
-    theme: "dark"
-}
+  name: "John",
+  age: 30,
+  theme: "dark",
+};
